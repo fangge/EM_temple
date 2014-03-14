@@ -1,0 +1,159 @@
+/* =s Reset (by YUI 3) */
+html{color:#000;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+input,textarea,select{*font-size:100%;}
+legend{color:#000;}
+.item a,nav,#openNav{transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;}
+/* =e Reset */
+/* =s base */
+html,body{height:100%;background:#2980b9;margin: 0;padding: 0}
+body{font-family:"Microsoft YaHei",simSun,"Lucida Grande","Lucida Sans Unicode",Arial,sans-serif;line-height:170%;font-size:12px;color:#000;}
+i{font-style:normal;}
+a{color:#000;text-decoration: none}
+a:hover{text-decoration: underline}
+a.under:link,a.under:active,a.under:visited,a.under:hover{text-decoration:underline;}
+/* float*/
+.fltL{float:left;}
+.fltR{float:right;}
+.fixR{position: absolute;top: 0px; right: 0px;}
+.setCenter{margin:0 auto;}
+
+/* clear */
+.clrB{clear:both;}
+.clrL{clear:left;}
+.clrR{clear:right;}
+.clrN{clear:none;}
+.g-clr { zoom: 1; }
+.g-clr:after { display: block; clear: both; height: 0; content: "\0020"; }
+/* =e base */
+
+/* =s Font */
+/* font-weight [first-letter]*/
+.b{font-weight:bold;}
+.n{font-weight:normal;}
+/* font-position [txt-P] */
+.txtC{text-align:center;}
+.g-thide { text-indent: -9999px; }
+.tRed{color: #d50000}
+.hide{display:none!important;}
+/* wrap */
+html,body,#wrap{height: 100%}
+body>#wrap{height: auto;min-height: 100%;padding-bottom: 20px}
+#wrap{width:100%;position: relative;*zoom:1}
+header{width: 960px;height:188px;margin: 0 auto;position: relative;*zoom: 1;z-index: 50}
+header img{display: block;width: 960px;height: auto;margin: 0 auto}
+#logo{display: block;width: 100%;height: 188px;position: absolute;top: 0;left: 0}
+nav{width: 994px;height: 72px;background: url(img/nav.jpg) no-repeat center 0;margin: 0 auto;position:static;z-index:99}
+.item{float: left;position: relative;*zoom:1}
+.item a{display: block;font-size:14px;width:84px;height: 63px;line-height: 63px;text-align: center;color: #fff;white-space: nowrap;overflow: hidden}
+.item a:hover{background: #5cbaf9;text-decoration: none}
+nav li.current a{background: #236fa3}
+.item ul{visibility:hidden;position: absolute;top: 63px;left: 0;z-index: 99}
+.school.current a{background: none}
+.school a{width: 61px;text-indent: -9999px}
+.school a:hover{background: none}
+.item ul li a{height: 30px;line-height: 30px;background: #247fbc}
+.item:hover ul,.item a:hover ul{visibility:visible;}
+article{width: 940px;background: url(img/bg.jpg) repeat-y center 0;margin: 0 auto;padding: 10px 15px;position:relative;z-index:10}
+.imgSlide{width: 524px;height: 357px;overflow: hidden;position: relative;*zoom:1;margin-left: 8px}
+.imgSlide .slides{width: 9999px;position: relative;z-index: 80}
+.imgSlide .slides li{float: left;width: 524px;height: 357px;position: relative;*zoom:1;}
+.imgSlide .slides li img{display: block;width: 524px;height: 322px;z-index: 1}
+.imgSlide .slides li p{width: 524px;height: 33px;line-height: 34px;color: #fff;font-size: 14px;z-index: 2;text-align: center;background: #2980b9;border-bottom: 2px solid #1a5881}
+.imgSlide #prev,.imgSlide #next{display: block;width: 32px;height: 32px;background: url(img/slideNav.jpg) no-repeat;position: absolute;bottom:3px;z-index:88}
+.imgSlide #prev{left:0}
+.imgSlide #next{background-position:-30px 0; right:0}
+.List1{width: 376px;margin-left: 26px}
+.List h2{width:334px;background: url(img/titlebg.jpg) repeat-x;height: 36px;line-height: 34px;color: #fff;position: relative;*zoom:1;padding-left: 42px;font-size: 14px}
+.List h2 i{display: block;width: 37px;height: 35px;position: absolute;top: 1px;left: 0}
+.List h2 a{margin-right: 10px;color: #fff;font-size: 12px;margin-top: 2px}
+.List1 h2 i,.List2 h2 i{background: url(img/list.jpg) no-repeat}
+.List3 h2 i{background: url(img/link.jpg) no-repeat}
+.List li{padding-left: 10px;background: url(img/li.jpg) no-repeat left 12px;height: 30px;line-height: 25px;font-size:14px;text-align: right}
+.List li a{float: left;width:270px;color: #000;display: block;;height:30px;overflow: hidden;text-align: left}
+.List li a:hover{color: #3693cf}
+.List1 li{width: 366px}
+.List2{width: 314px;margin-top: 15px;margin-left: 7px}
+.List2 h2{width: 272px;}
+.List2 li{width: 300px}
+.List2 li a{width: 205px}
+.List2_2{margin-left: 35px}
+.List3{width: 72%;margin-left: 30px}
+.List3 h2{width: 638px}
+.List3_2{width: 98%;margin-left:10px}
+.List3_2 h2{width: 882px}
+.schBox{width:225px;height:271px;float:left;margin-top: 15px;margin-left: 42px;position: relative}
+.schBox input#schTxt{width:215px;padding-left:10px;height:32px;line-height:32px;color:#fff;border: 0;background: #2980b9;font-size: 14px;}
+.schBox input#schBtn{display:block;width:23px;height:23px;background: url(img/sch.jpg) no-repeat;text-indent: -9999px;position: absolute;right: 5px;top: 5px;border: 0;cursor: pointer}
+.ny .schBox{margin: 0}
+.ny article{padding-bottom: 0px;}
+.nextlog{margin:15px 0;}
+.nextlog a{color: #0079b7}
+.artTitle{font-size: 20px;line-height: 30px;text-align: center;font-weight: bold;margin:10px 0}
+.artInfo{text-align: center;font-size: 12px;color:#0079b7;margin-bottom: 10px}
+.artInfo a,.artTime{color: #044363}
+.artText{margin: 0 auto;padding: 5px 35px 0;}
+.artTemt p{font-size: 14px;line-height: 26px;margin-bottom: 10px}
+.artText a{color: #0079b7}
+.artText p{margin:20px 0}
+.artText p a img{display: block;width: 500px;height:auto;margin: 10px auto;border: 1px solid #0079b7}
+#pagenavi{text-align: center}
+#pagenavi span,#pagenavi a{display: block;float: left;width: 30px;height: 30px;line-height: 30px;}
+#pagenavi a{background: #2980b9;color: #fff}
+#pagenavi a:hover{text-decoration: none;background: #2a95d5}
+footer{width: 994px;height: 119px;background: url(img/footer.jpg) no-repeat center 0;margin: 0 auto;position: relative;*zoom:1}
+footer p{font-size: 14px;color: #fff}
+footer p span{font-weight: bold}
+footer p a{color: #fff;text-decoration: underline}
+footer .intro1{position: absolute;top: 35px;left: 43px;line-height: 30px;}
+footer .intro2{position: absolute;top: 33px;left: 540px;line-height: 20px}
+footer .intro3{position: absolute;top: 76px;left: 540px}
+
+.attachment{margin:10px 0;font-size:18px;text-align:center;}
+.attachment:before{content:'下载文件：'}
+#openNav,#closeNav{display: none}
+@media all and (max-width: 1009px){
+    header{width: 100%;height: auto}
+    header img{width: 100%;height: auto}
+    #logo{height: 100%;width: 100%;}
+    nav{background: none;width: 100%;height: auto;position: absolute;top: 0;left: -100%;background: #fff;}
+    .item{float: none;}
+    .item a{color: #000;width: 100%;height:35px;line-height:35px;text-align: center;font-size: 1.4em;font-weight: bold;background: none}
+    .school a{text-indent: 0}
+    .item a:hover{background: none}
+    .item ul{position: static;visibility: visible;}
+    .item ul li a{background: #fff;font-weight: normal;text-indent: 5px}
+    .item ul li a:before{content:'-'}
+    #openNav,#closeNav{display: block;position: absolute;z-index: 9999;width: 10%;}
+    #openNav img,#closeNav img{display: block;width: 100%;height: auto}
+    #closeNav{top: 2%;left: 2%}
+    #openNav{top: 2%;left: 0;position: fixed;border: 1px solid #044363}
+    article{background: none #fff;width: 96%;padding: 2%}
+    .List{float: none;margin: 0;width: 100%;}
+    .List h2,.List1 li,.List2 li,.List3 li{width: auto}
+    .List li a{width: 65%}
+    .imgSlide{display: none}
+    .schBox{width: 100%;height:auto;margin: 0 auto}
+    .schBox input#schTxt{width: 96%}
+    .schBox img{display:none}
+    footer{width:100%;background: none;height: auto;text-align: center}
+    footer p a{color: #fff}
+    footer .intro1,footer .intro2,footer .intro3{position: static;color: #fff;font-size: 1.2em;line-height: 2em}
+
+    .ny .List h2{background: none;color: #000;padding: 0;height: auto}
+    .ny .List h2 i{display: none}
+    .ny .List h2 a{color: #044363;font-size:1em;margin: 0}
+    .ny .artText{padding: 5px 0 0;line-height: 1.5em;font-size: 1.4em}
+}
