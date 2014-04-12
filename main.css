@@ -56,10 +56,12 @@ header{width: 960px;height:188px;margin: 0 auto;position: relative;*zoom: 1;z-in
 header img{display: block;width: 960px;height: auto;margin: 0 auto}
 #logo{display: block;width: 100%;height: 188px;position: absolute;top: 0;left: 0}
 nav{width: 994px;height: 72px;background: url(img/nav.jpg) no-repeat center 0;margin: 0 auto;position:static;z-index:99}
+nav ul{position:relative;z-index:99}
 .item{float: left;position: relative;*zoom:1}
 .item a{display: block;font-size:14px;width:84px;height: 63px;line-height: 63px;text-align: center;color: #fff;white-space: nowrap;overflow: hidden}
 .item a:hover{background: #5cbaf9;text-decoration: none}
 nav li.current a{background: #236fa3}
+.listTime{float:right;text-align:left}
 .item ul{visibility:hidden;position: absolute;top: 63px;left: 0;z-index: 99}
 .school.current a{background: none}
 .school a{width: 61px;text-indent: -9999px}
@@ -96,7 +98,8 @@ article{width: 940px;background: url(img/bg.jpg) repeat-y center 0;margin: 0 aut
 .List3_2 h2{width: 882px}
 .schBox{width:225px;height:271px;float:left;margin-top: 15px;margin-left: 42px;position: relative}
 .schBox input#schTxt{width:215px;padding-left:10px;height:32px;line-height:32px;color:#fff;border: 0;background: #2980b9;font-size: 14px;}
-.schBox input#schBtn{display:block;width:23px;height:23px;background: url(img/sch.jpg) no-repeat;text-indent: -9999px;position: absolute;right: 5px;top: 5px;border: 0;cursor: pointer}
+.schBox input#schBtn{display:block;width:23px;height:23px;background: url(img/sch.jpg) no-repeat;text-indent: -9999px;position: absolute;right: 3%;top: 5px;border: 0;cursor: pointer}
+hr{margin:10px 0}
 .ny .schBox{margin: 0}
 .ny article{padding-bottom: 0px;}
 .nextlog{margin:15px 0;}
@@ -108,7 +111,9 @@ article{width: 940px;background: url(img/bg.jpg) repeat-y center 0;margin: 0 aut
 .artTemt p{font-size: 14px;line-height: 26px;margin-bottom: 10px}
 .artText a{color: #0079b7}
 .artText p{margin:20px 0}
-.artText p a img{display: block;width: 500px;height:auto;margin: 10px auto;border: 1px solid #0079b7}
+.artText img{display: block;width: 600px;height:auto;margin: 10px auto;border: 1px solid #0079b7}
+.artText table{margin:0 auto;}
+.artText td span{font-size:16px!important}
 #pagenavi{text-align: center}
 #pagenavi span,#pagenavi a{display: block;float: left;width: 30px;height: 30px;line-height: 30px;}
 #pagenavi a{background: #2980b9;color: #fff}
@@ -120,7 +125,10 @@ footer p a{color: #fff;text-decoration: underline}
 footer .intro1{position: absolute;top: 35px;left: 43px;line-height: 30px;}
 footer .intro2{position: absolute;top: 33px;left: 540px;line-height: 20px}
 footer .intro3{position: absolute;top: 76px;left: 540px}
-
+.link{text-align:center}
+.link a{font-size:14px;color:#919191}
+.link a:hover{color:#000}
+.link strong{font-weight:bold}
 .attachment{margin:10px 0;font-size:18px;text-align:center;}
 .attachment:before{content:'下载文件：'}
 #openNav,#closeNav{display: none}
@@ -146,7 +154,7 @@ footer .intro3{position: absolute;top: 76px;left: 540px}
     .List li a{width: 65%}
     .imgSlide{display: none}
     .schBox{width: 100%;height:auto;margin: 0 auto}
-    .schBox input#schTxt{width: 96%}
+    .schBox input#schTxt{width: 97%}
     .schBox img{display:none}
     footer{width:100%;background: none;height: auto;text-align: center}
     footer p a{color: #fff}
