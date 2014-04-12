@@ -56,7 +56,14 @@
         ?>
         <img src="<?php echo TEMPLATE_URL; ?>img/banner.jpg" alt=""/>
     </section>
-
+	<div class="g-clr"></div>
+	<hr class="clrL"/>
+	<section class="link">
+		<strong>友情链接：</strong>
+		<a href="http://www.thjy.org/" target="_blank">天河教育部落</a> | 
+		<a href="http://study.163.com/#/index" target="_blank">网易云课堂</a> |
+		<a href="http://www.zhihu.com/" target="_blank">知乎</a>
+	</section>
 
 <?php else: ?>
     <article class="g-clr ny">
