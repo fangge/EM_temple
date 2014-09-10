@@ -16,7 +16,7 @@ require_once View::getView('module');
 <head>
 <meta charset="utf-8"/>
 <title><?php echo $site_title; ?></title>
-<meta name="keywords" content="<?php echo $site_key; ?>" />
+<meta name="keywords" content="<?php echo $site_title; ?>,<?php echo $site_key; ?>" />
 <meta name="description" content="<?php echo $site_description; ?>" />
 <meta name="viewport" content="width=device-width,maximum-scale=1.0">
 <meta name="generator" content="emlog" />

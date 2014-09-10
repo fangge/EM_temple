@@ -168,7 +168,7 @@ function widget_random_log($title){
 function widget_search($title){ ?>
 	<div id="logsearch">
 	<form name="keyform" method="get" action="<?php echo BLOG_URL; ?>index.php">
-	<input name="keyword" class="search" type="text"  id="schTxt"/>
+	<input name="keyword" class="search" type="text"  id="schTxt" value="搜索文章"  onfocus="if(this.value=='搜索文章'){this.value='';}" onblur="if(this.value==''){this.value='搜索文章';}"/>
         <input type="submit" name="submit" type="button" value="搜索" id="schBtn"/>
 	</form>
 	</div>
@@ -222,7 +222,7 @@ function blog_navi(){
 	?>
 	<ul class="bar g-clr">
         <li class="item school">
-            <a href="<?php echo BLOG_URL; ?>">首页</a>
+            <a href="<?php echo BLOG_URL; ?>" title="回到首页">首页</a>
         </li>
 	<?php
 	foreach($navi_cache as $value):

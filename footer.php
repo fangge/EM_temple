@@ -13,6 +13,7 @@ if(!defined('EMLOG_ROOT')) {exit('error!');}
 </footer>
 </div>
 <section class="hide">
+	<p>Theme by <a href="http://www.mrfangge.com/">MrFangge</a></p>
     <script type="text/javascript" src="<?php echo TEMPLATE_URL; ?>jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="<?php echo TEMPLATE_URL; ?>page.js"></script>
 </section>

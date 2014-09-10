@@ -72,7 +72,13 @@ article{width: 940px;background: url(img/bg.jpg) repeat-y center 0;margin: 0 aut
 .imgSlide{width: 524px;height: 357px;overflow: hidden;position: relative;*zoom:1;margin-left: 8px}
 .imgSlide .slides{width: 9999px;position: relative;z-index: 80}
 .imgSlide .slides li{float: left;width: 524px;height: 357px;position: relative;*zoom:1;}
-.imgSlide .slides li img{display: block;width: 524px;height: 322px;z-index: 1}
+.imgSlide .slides li .imgWrap{width:524px;height:322px;overflow:hidden;}
+.imgSlide .slides li img{display: block;width: 524px;height: 322px;z-index: 1;transition: all .5s ease-in-out;
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+-ms-transition: all .5s ease-in-out}
+.imgSlide .slides li:hover img{-webkit-transform: scale(1.1,1.1);-ms-transform: scale(1.1,1.1);}
 .imgSlide .slides li p{width: 524px;height: 33px;line-height: 34px;color: #fff;font-size: 14px;z-index: 2;text-align: center;background: #2980b9;border-bottom: 2px solid #1a5881}
 .imgSlide #prev,.imgSlide #next{display: block;width: 32px;height: 32px;background: url(img/slideNav.jpg) no-repeat;position: absolute;bottom:3px;z-index:88}
 .imgSlide #prev{left:0}
@@ -111,6 +117,7 @@ hr{margin:10px 0}
 .artTemt p{font-size: 14px;line-height: 26px;margin-bottom: 10px}
 .artText a{color: #0079b7}
 .artText p{margin:20px 0}
+.artText p span{line-height:22px}
 .artText img{display: block;width: 600px;height:auto;margin: 10px auto;border: 1px solid #0079b7}
 .artText table{margin:0 auto;}
 .artText td span{font-size:16px!important}
@@ -126,7 +133,7 @@ footer .intro1{position: absolute;top: 35px;left: 43px;line-height: 30px;}
 footer .intro2{position: absolute;top: 33px;left: 540px;line-height: 20px}
 footer .intro3{position: absolute;top: 76px;left: 540px}
 .link{text-align:center}
-.link a{font-size:14px;color:#919191}
+.link a{font-size:14px;color:#6196C7}
 .link a:hover{color:#000}
 .link strong{font-weight:bold}
 .attachment{margin:10px 0;font-size:18px;text-align:center;}
@@ -164,4 +171,7 @@ footer .intro3{position: absolute;top: 76px;left: 540px}
     .ny .List h2 i{display: none}
     .ny .List h2 a{color: #044363;font-size:1em;margin: 0}
     .ny .artText{padding: 5px 0 0;line-height: 1.5em;font-size: 1.4em}
+}
+@media all and (max-width: 270px){
+	body{min-width:270px}
 }

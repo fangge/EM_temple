@@ -62,7 +62,10 @@
 		<strong>友情链接：</strong>
 		<a href="http://www.thjy.org/" target="_blank">天河教育部落</a> | 
 		<a href="http://study.163.com/#/index" target="_blank">网易云课堂</a> |
-		<a href="http://www.zhihu.com/" target="_blank">知乎</a>
+		<a href="http://www.zhihu.com/" target="_blank">知乎</a> |
+		<a href="http://www.tagd.org.cn/" target="_blank">广东省翻译协会</a> |
+		<a href="http://www.dajie.com/" target="_blank">大街网</a> |
+		<a href="http://www.liepin.com/" target="_blank">猎聘网</a>
 	</section>
 
 <?php else: ?>
