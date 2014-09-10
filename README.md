@@ -18,11 +18,15 @@
 
  5.数据调用插件相关：
 
- （1）学校公告：
+ （1）学校公告：  
 ```html
     <li>{title}<span class="listTime">[{date}]</span></li>
 ```
-  （2）学生公告和教师公告
+  （2）学生公告和教师公告  
   ```html
-  <li><a href="{log_url}" title="{title_without_link}" target="_blank">{title_without_link}</a><span class="listTime">[{date}]</span></li>
+  <li><a href="{log_url}" title="{title_without_link}" target="_blank">{title_without_link}</a><span class="listTime">[{date}]</span></li>  
+```
+  （3）学生公告和教师公告  
+  ```html
+  <li><div  class="imgWrap"><img src="{photo_url}" /></div><p>{photo_description}</p></li>  
 ```
