@@ -1,5 +1,11 @@
 <?php if("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] == BLOG_URL or 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] == BLOG_URL.'index.php'): ?>
-<article class="g-clr">
+    <?php
+    /**
+     * 站点首页模板
+     */
+    if(!defined('EMLOG_ROOT')) {exit('error!');}
+    ?>
+    <article class="g-clr">
     <section class="imgSlide fltL">
         <div class="img-list g-clr">
             <ul class="slides g-clr">
