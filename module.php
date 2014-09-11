@@ -403,3 +403,15 @@ function blog_tool_ishome(){
     }
 }
 ?>
+<?php
+//widget：最新微语
+function latest_twitter(){
+    global $CACHE;
+    $newtws_cache = $CACHE->readCache('newtw');
+    $istwitter = Option::get('istwitter');
+    ?>
+    <div class="note-bar">
+        <img src="http://www.mrfangge.com/wp-content/uploads/2014/09/read.gif" alt="外国语学院LOGO"/>最新通知：<?php echo $newtws_cache[0]['t']; ?>
+    </div>
+
+<?php }?>
