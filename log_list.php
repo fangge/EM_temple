@@ -1,37 +1,31 @@
 <?php if("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] == BLOG_URL or 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] == BLOG_URL.'index.php'): ?>
-    <?php
-    /**
-     * 站点首页模板
-     */
-    if(!defined('EMLOG_ROOT')) {exit('error!');}
-    ?>
-    <article class="g-clr">
+<article class="g-clr">
     <section class="imgSlide fltL">
         <div class="img-list g-clr">
             <ul class="slides g-clr">
-                <?php kl_data_call_for_internal(4); ?>
+                <?php kl_data_call_for_internal(1); ?>
             </ul>
         </div>
         <a id="prev" href="javascript:void(0)" class="g-thide">上一张</a>
         <a id="next" href="javascript:void(0)" class="g-thide">下一张</a>
     </section>
     <section class="List fltL List1">
-        <h2><a href="<?php echo BLOG_URL; ?>?sort=40" target="_blank" class="fltR">+查看更多</a><i class="icon g-thide">List</i>学院新闻</h2>
+        <h2><a href="<?php echo BLOG_URL; ?>?sort=38" target="_blank" class="fltR">+查看更多</a><i class="icon g-thide">List</i>学院新闻</h2>
         <ul class="g-clr">
-            <?php kl_data_call_for_internal(1); ?>
+            <?php get_list(38,11); ?>
         </ul>
     </section>
 	<div class="g-clr"></div>
     <section class="List fltL List2 clrL">
-        <h2><a href="<?php echo BLOG_URL; ?>?sort=42" target="_blank" class="fltR">查看更多+</a><i class="icon g-thide">List</i>教师公告</h2>
+        <h2><a href="<?php echo BLOG_URL; ?>?sort=40" target="_blank" class="fltR">查看更多+</a><i class="icon g-thide">List</i>教师公告</h2>
         <ul class="g-clr">
-            <?php kl_data_call_for_internal(3); ?>
+            <?php get_list(40,8); ?>
         </ul>
     </section>
     <section class="List fltL List2 List2_2">
-        <h2><a href="<?php echo BLOG_URL; ?>?sort=41" target="_blank" class="fltR">查看更多+</a><i class="icon g-thide">List</i>学生公告</h2>
+        <h2><a href="<?php echo BLOG_URL; ?>?sort=39" target="_blank" class="fltR">查看更多+</a><i class="icon g-thide">List</i>学生公告</h2>
         <ul class="g-clr">
-            <?php kl_data_call_for_internal(2); ?>
+            <?php get_list(39,8); ?>
         </ul>
     </section>
     <section class="schBox">
@@ -133,7 +127,7 @@
                 if (!empty($logs)):
                     foreach($logs as $value):
                         ?>
-                        <li><a href="<?php echo $value['log_url']; ?>" target="_blank"><?php echo $value['log_title']; ?></a>[<?php echo gmdate('Y-n-j', $value['date']); ?>]</li>
+                        <li><a href="<?php echo $value['log_url']; ?>" target="_blank"><?php topflg($top); ?><?php echo $value['log_title']; ?></a>[<?php echo gmdate('Y-n-j', $value['date']); ?>]</li>
                     <?php
                     endforeach;
                 else:

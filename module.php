@@ -253,7 +253,7 @@ function blog_navi(){
 <?php
 //blog：置顶
 function topflg($istop){
-	$topflg = $istop == 'y' ? "<img src=\"".TEMPLATE_URL."/images/import.gif\" title=\"置顶文章\" /> " : '';
+	$topflg = $istop == 'y' ? "[置顶] " : '';
 	echo $topflg;
 }
 ?>
@@ -404,14 +404,17 @@ function blog_tool_ishome(){
 }
 ?>
 <?php
-//widget：最新微语
-function latest_twitter(){
-    global $CACHE;
-    $newtws_cache = $CACHE->readCache('newtw');
-    $istwitter = Option::get('istwitter');
-    ?>
-    <div class="note-bar">
-        <img src="http://www.mrfangge.com/wp-content/uploads/2014/09/read.gif" alt="外国语学院LOGO"/>最新通知：<?php echo $newtws_cache[0]['t']; ?>
-    </div>
-
-<?php }?>
+//首页分类列表
+function get_list($sort,$num){
+	$db = MySql::getInstance();
+	$sql = "SELECT gid,title,date FROM ".DB_PREFIX."blog WHERE sortid=".$sort." AND hide='n' ORDER BY `date` DESC LIMIT 0,".$num."";
+	$list = $db->query($sql);
+	while($row = $db->fetch_array($list)){
+			$l .= '<li><a href="'.Url::log($row['gid']).'" target="_blank">'.$row['title'].'</a><span class="listTime">['.date('Y-m-d',$row['date']).']</span></li>';
+		}
+	$sql = "SELECT sortname FROM ".DB_PREFIX."sort WHERE sid=".$sort;
+	$s = $db->query($sql);
+	$sortname = $db->fetch_array($s);
+	echo $l;
+}
+?>

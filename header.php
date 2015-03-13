@@ -33,13 +33,13 @@ require_once View::getView('module');
 <script src="<?php echo TEMPLATE_URL; ?>iefix.js" type="text/javascript"></script>
 <![endif]-->
 <!--[if lte IE 9]><script charset="gb2312" src="<?php echo TEMPLATE_URL; ?>html5shiv.js"></script><![endif]-->
-<?php doAction('index_head'); ?>
 </head>
 <body>
+	<?php doAction('index_head'); ?>
 <h1 class="hide"><?php echo $site_title; ?></h1>
 <div id="wrap">
     <header>
-        <img src="<?php echo TEMPLATE_URL; ?>/img/header.jpg" alt="外国语学院LOGO"/>
+        <img src="<?php echo TEMPLATE_URL; ?>img/header.jpg" alt="外国语学院LOGO"/>
         <a id="logo" class="g-thide" href="<?php echo BLOG_URL; ?>" title="<?php echo $site_title; ?>" target="_blank"><?php echo $site_title; ?></a>
     </header>
     <nav>

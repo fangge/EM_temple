@@ -84,9 +84,9 @@ article{width: 940px;background: url(img/bg.jpg) repeat-y center 0;margin: 0 aut
 .imgSlide #prev{left:0}
 .imgSlide #next{background-position:-30px 0; right:0}
 .List1{width: 376px;margin-left: 26px}
-.List h2{width:334px;background: url(img/titlebg.jpg) repeat-x;height: 36px;line-height: 34px;color: #fff;position: relative;*zoom:1;padding-left: 42px;font-size: 14px}
+.List h2{width:334px;background: url(img/titlebg.jpg) repeat-x;height: 36px;line-height: 36px;color: #fff;position: relative;*zoom:1;padding-left: 42px;font-size: 14px}
 .List h2 i{display: block;width: 37px;height: 35px;position: absolute;top: 1px;left: 0}
-.List h2 a{margin-right: 10px;color: #fff;font-size: 12px;margin-top: 2px}
+.List h2 a{margin-right: 10px;color: #fff;font-size: 14px;margin-top: 2px}
 .List1 h2 i,.List2 h2 i{background: url(img/list.jpg) no-repeat}
 .List3 h2 i{background: url(img/link.jpg) no-repeat}
 .List li{padding-left: 10px;background: url(img/li.jpg) no-repeat left 12px;height: 30px;line-height: 25px;font-size:14px;text-align: right}
@@ -121,6 +121,7 @@ hr{margin:10px 0}
 .artText img{display: block;width: 600px;height:auto;margin: 10px auto;border: 1px solid #0079b7}
 .artText table{margin:0 auto;}
 .artText td span{font-size:16px!important}
+.artText span strong{font-weight:800}
 #pagenavi{text-align: center}
 #pagenavi span,#pagenavi a{display: block;float: left;width: 30px;height: 30px;line-height: 30px;}
 #pagenavi a{background: #2980b9;color: #fff}
@@ -137,7 +138,7 @@ footer .intro3{position: absolute;top: 76px;left: 540px}
 .link a:hover{color:#000}
 .link strong{font-weight:bold}
 .attachment{margin:10px 0;font-size:18px;text-align:center;}
-.attachment:before{content:'下载文件：'}
+.attachment:before{content:'下载：'}
 #openNav,#closeNav{display: none}
 @media all and (max-width: 1009px){
     header{width: 100%;height: auto}
@@ -171,6 +172,8 @@ footer .intro3{position: absolute;top: 76px;left: 540px}
     .ny .List h2 i{display: none}
     .ny .List h2 a{color: #044363;font-size:1em;margin: 0}
     .ny .artText{padding: 5px 0 0;line-height: 1.5em;font-size: 1.4em}
+
+.artText img{width:96%}
 }
 @media all and (max-width: 270px){
 	body{min-width:270px}
